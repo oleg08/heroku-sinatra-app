@@ -5,7 +5,6 @@
 #
 # $ ruby heroku-sinatra-app.rb
 #
-require 'rubygems'
 require 'sinatra'
 
 configure :production do
