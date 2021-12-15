@@ -6,6 +6,7 @@
 # $ ruby heroku-sinatra-app.rb
 #
 require 'sinatra'
+require 'sinatra/activerecord'
 
 configure :production do
   # Configure stuff here you'll want to
@@ -17,8 +18,7 @@ end
 
 # Quick test
 get '/' do
-  "Congradulations!
-   You're running a Sinatra application on Heroku!"
+  erb :index
 end
 
 # Test at <appname>.heroku.com
