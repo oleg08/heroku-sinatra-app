@@ -4,6 +4,10 @@
   <!-- Style and javascript links -->
 </head>
 <body>
-<!-- Your content here! -->
+<ul>
+  <% @projects.each do |project| %>
+    <li><%= project.id %> - <%= project.name %></li>
+  <% end %>
+</ul>
 </body>
 </html>

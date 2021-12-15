@@ -7,6 +7,7 @@
 #
 require 'sinatra'
 require 'sinatra/activerecord'
+require_relative 'models/project'
 
 configure :production do
   # Configure stuff here you'll want to
@@ -18,6 +19,7 @@ end
 
 # Quick test
 get '/' do
+  @projects = Project.all
   erb :index
 end
 
