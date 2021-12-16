@@ -1,13 +1,7 @@
-<!doctype html>
-<html>
-<head>
-  <!-- Style and javascript links -->
-</head>
-<body>
-<ul>
+<ul class="list-group">
   <% @projects.each do |project| %>
-    <li><%= project.id %> - <%= project.name %></li>
+    <li class="list-group-item">
+      <h4 class="float-start"><%= project.id %> - <%= project.name %></h4>
+    </li>
   <% end %>
 </ul>
-</body>
-</html>
